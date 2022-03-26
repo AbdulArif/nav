@@ -1,0 +1,45 @@
+#top-grid{
+    background-color:#013b51 ;
+    padding: 45 0 0 0;
+}
+
+.profile{
+    font-size: 40;
+    color: white;
+    text-align: center;
+    }
+    .profile-text{
+        font-size: 26;
+        color: white;
+        text-align: center;
+        margin-top: 10;
+        margin-bottom: 60;
+    }
+.input-field{
+    width: 280;
+    //border-color: white;
+    border-bottom-color: white;
+    border-bottom-width: 1;
+    color: white;
+    placeholder-color:white;
+    font-size:20;
+}
+.circel{
+    width: 145;
+    height: 145;
+    border-radius: 100%;
+    border-width: 2;
+    border-color: white;
+    background-color: #202d3d;
+    margin-top: 30;
+}
+.login-Button{
+    width: 100;
+    color: #202d3d;
+    border-width: 1;
+    border-color: white;
+    border-radius: 10;
+    height: 40;
+    margin-top: 20;
+
+}

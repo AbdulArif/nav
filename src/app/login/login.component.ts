@@ -5,6 +5,7 @@ import { Application } from '@nativescript/core'
 @Component({
   selector: 'Login',
   templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   constructor() {
@@ -18,5 +19,8 @@ export class LoginComponent implements OnInit {
   onDrawerButtonTap(): void {
     const sideDrawer = <RadSideDrawer>Application.getRootView()
     sideDrawer.showDrawer()
+  }
+  onButtonTap(){
+    
   }
 }

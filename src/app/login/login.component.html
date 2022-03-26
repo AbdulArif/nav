@@ -1,4 +1,14 @@
-<StackLayout orientaion="vertical" backgroundColor="#F0F0F0">
-    <label text="Login page"></label>
-    
+<ActionBar title="Login"></ActionBar>
+<GridLayout rows="*" columns="*" id="top-grid">
+  <StackLayout orientation="vertical">
+    <label text="Pixel Design" class="profile"></label>
+    <GridLayout class="circel" >
+    </GridLayout>
+    <label text="Profile" class="profile-text"></label>
+    <!-- <TextField [(ngModel)]="textFieldValue" class="input-field" hint="Your Password"></TextField> -->
+    <TextField class="input-field" hint="Your Password"></TextField>
+    <TextField class="input-field" hint="Your Email"></TextField>
+    <Button text="Login" class="login-Button" (tap)="onButtonTap()"></Button>
   </StackLayout>
+
+</GridLayout>
