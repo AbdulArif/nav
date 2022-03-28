@@ -8,6 +8,8 @@ import { Application } from '@nativescript/core'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  x=1;
   constructor() {
     // Use the component constructor to inject providers.
   }
@@ -25,5 +27,10 @@ export class HomeComponent implements OnInit {
   }
   onShare(){
     
+  }
+  onButtonTap(): void{
+    console.log("Button was pressed");
+    this.x=this.x + 1
+
   }
 }

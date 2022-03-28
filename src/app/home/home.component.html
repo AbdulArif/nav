@@ -13,25 +13,18 @@
 
     <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
   </GridLayout>
-  <ActionItem
-    (tap)="onShare()"
-    ios.systemIcon="9"
-    ios.position="left"
-    android.systemIcon="ic_menu_share"
-    android.position="actionBar"
-  >
+  <ActionItem (tap)="onShare()" ios.systemIcon="9" ios.position="left" android.systemIcon="ic_menu_share"
+    android.position="actionBar">
   </ActionItem>
-  <ActionItem
-    text="delete"
-    (tap)="onDelete()"
-    ios.systemIcon="16"
-    ios.position="right"
-    android.position="popup"
-  >
+  <ActionItem text="delete" (tap)="onDelete()" ios.systemIcon="16" ios.position="right" android.position="popup">
   </ActionItem>
 </ActionBar>
 
 <StackLayout orientaion="vertical" backgroundColor="#F0F0F0">
   <label text="Label One" class="lableOne"></label>
-  <label text="Label Two" class="lableTwo"></label>
+  <!-- <label text="Label Two" class="lableTwo"></label> -->
+  <!-- <DatePicker year="1990" month="1" day="1" verticalAlignment="center"></DatePicker>
+  <TimePicker hour="9" minute="25" maxHour="23" maxMinute="59" minuteInterval="5"></TimePicker> -->
+  <Button text="Button" (tap)="onButtonTap()"></Button>
+  <Label [text]="x" fontSize="20"></Label>
 </StackLayout>
