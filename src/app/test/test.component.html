@@ -1,0 +1,33 @@
+<ActionBar class="action-bar">
+    <NavigationButton visibility="hidden"></NavigationButton>
+    <GridLayout columns="50, *">
+      <Label class="action-bar-title" text="Test" colSpan="2"></Label>
+  
+      <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+    </GridLayout>
+  </ActionBar>
+  
+  <GridLayout>
+    
+    <ScrollView>
+      <StackLayout class="home-panel">
+    
+          <ListView [items]="countries" (itemTap)="onItemTap($event)"
+              style="height:1250px">
+              <ng-template let-country="item">
+                  <FlexboxLayout flexDirection="row">
+                      <Image [src]="country.imageSrc"
+                          class="thumb img-circle"></Image>
+                      <Label [text]="country.name" class="t-12"
+                          verticalAlignment="center" style="width: 60%">
+                      </Label>
+                  </FlexboxLayout>
+              </ng-template>
+          </ListView>
+
+
+      </StackLayout>
+  </ScrollView>
+    
+  </GridLayout>
+  

@@ -44,9 +44,21 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
           <Label col="0" text="&#xf013;" class="nt-icon fas"></Label>
           <Label col="1" text="Settings" class="p-r-10"></Label>
         </GridLayout>
-        <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/settings')"
+
+
+        <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/test')"
+          (tap)="onNavItemTap('/test')">
+          <Label col="0" text="&#xf03a;" class="nt-icon fas"></Label>
+          <Label col="1" text="ListView" class="p-r-10"></Label>
+        </GridLayout>
+
+
+
+
+        <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/login')"
           (tap)="onNavItemTap('/login')">
-          <Label col="0" text="&#xf013;" class="nt-icon fas"></Label>
+          <!-- <Label col="0" text="&#xf013;" class="fas fa-sign-in-alt"></Label> -->
+          <Label col="0" text="&#xf2f6;" class="nt-icon fas"></Label>
           <Label col="1" text="login" class="p-r-10"></Label>
         </GridLayout>
       </StackLayout>
